@@ -136,7 +136,7 @@ logo =("""
 \x1b[38;5;46m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mOWNER     \033[1;31m● \x1b[38;5;46mGAMING SHAHO
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mFacebook  \033[1;31m● \x1b[38;5;46mGAMING SHAHO
-\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mVersion  \033[1;31m ● \x1b[38;5;46m1.1
+\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mVersion  \033[1;31m ● \x1b[38;5;46m1.2
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mTools  \033[1;31m   ● \x1b[38;5;46mRandom Cloning
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mType  \033[1;31m    ● \x1b[38;5;46mFREE
 \033[1;31m[\033[1;32m=\033[1;96m]  \x1b[38;5;46mwHATSAPP  \033[1;96m●\x1b[38;5;46m01951153459
@@ -251,7 +251,7 @@ def rcrack1(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print('\r\r\033[1;32m[SHAHO-OK🥰] ' +uid+ ' | ' +ps+    '  \n[‎‎🦇]\x1b[38;5;254mCOOKIE = \x1b[38;5;254m'+coki+ ' ''  \x1b[38;5;254m')
+                print('\r\r\033[1;32m[SHAHO-OK🥰] ' +uid+ ' | ' +ps+    '  \n[‎‎🍪]\x1b[38;5;254mCOOKIE = \x1b[38;5;254m'+coki+ ' ''  \x1b[38;5;254m')
                 open('/sdcard/SHAHO-OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
                 oks.append(uid)
                 break
