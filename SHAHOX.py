@@ -1,19 +1,5 @@
 
-#--------------------------(IMPORT BOX)--------------------------#
-import os,time,rich
-
-try:
-	import rich
-except ModuleNotFoundError:
-	os.system('pip install rich')
-	import rich
-
-from rich.progress import track
-def lood(message):
-	for a in track (range(250), description = message):
-		time.sleep(0.02)
-
-
+#--------------------------(IMPORT BOX)----------------------#
 import os,sys,time,json,random,re,string,platform,base64,uuid
 from bs4 import BeautifulSoup as sop
 from bs4 import BeautifulSoup
